@@ -25,4 +25,49 @@ In linux systems install lastest nvidia cuda drivers and the opencl backend.
        
 ```
 
+* Once the repository is cloned and all the dependencies are install run:
 
+```
+      source("./libraries.R")
+      
+```
+
+* For each cancer type run the following set of commands
+
+##Breast cancer
+```
+      #Create data
+      source("./Data/BRCA_data.R")
+      
+      #Run galgoR
+      source("./Galgo_BRCA.R")
+      
+```
+##Colorectal cancer
+```
+      #Create data
+      source("./Data/CRC_data.R")
+      
+      #Run galgoR
+      source("./Galgo_CRC.R")
+      
+```
+##Lung adenocarcinoma
+```
+      #Create data
+      source("./Data/LUAD_data.R")
+      
+      #Run galgoR
+      source("./Galgo_LUAD.R")
+      
+```
+
+##High grade serous ovarian cancer
+```
+      #Create data
+      source("./Data/HGSOC_data.R")
+      
+      #Run galgoR
+      source("./Galgo_HGSOC.R")
+      
+```
