@@ -22,7 +22,7 @@ h="CRC"
 dir.create(paste0("./Results/Results_",h),recursive=TRUE)
 resultdir=paste0("./Results/Results_",h)
 
-output= galgoR::search_ges(generations = generations, population = population,prob_matrix = prob_matrix, OS=OS,usegpu=GPU,nCV= nCV,
+output= galgoR::galgo(generations = generations, population = population,prob_matrix = prob_matrix, OS=OS,usegpu=GPU,nCV= nCV,
                            distancetype=distancetype, TournamentSize=TournamentSize, period=period,res_dir=resultdir)
 
 
