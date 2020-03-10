@@ -15,6 +15,7 @@ devtools::install_github("https://github.com/harpomaxx/galgo")
 ```
 
 * Of importance is to have `gpuR` package propperly installed and working. To instruction on the installation process and troubleshoot follow: https://github.com/cdeterman/gpuR/wiki
+
 By default galgo runs some portions of its code in GPU, provided by the gpuR package. Before installing gpuR, the opencl backend should be configured. 
 
 In linux systems install lastest nvidia cuda drivers and the opencl backend.
@@ -25,16 +26,18 @@ In linux systems install lastest nvidia cuda drivers and the opencl backend.
        
 ```
 
+
+
+# To reproduce the results of the paper for each cancer type run the following set of commands:
+
+**Previous to the dataset creation, please look carefully inside the data.R files the data needed for the code execution**
+
 * Once the repository is cloned and all the dependencies are install run:
 
 ```
       source("./libraries.R")
       
 ```
-
-# To reproduce the results of the paper for each cancer type run the following set of commands:
-
-**Previous to the dataset creation, please look carefully inside the data.R files the data needed for the code execution**
 
 ## Breast cancer
 ```
