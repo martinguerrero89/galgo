@@ -4,7 +4,7 @@
 
 **Methods**: We propose a multi-objective optimization algorithm for disease subtype discovery based on a non-dominated sorting genetic algorithm. Our proposed framework combines the advantages of clustering algorithms for grouping heterogeneous omics data and the searching properties of genetic algorithms for feature selection and optimal number of clusters determination to find features that maximize the survival difference between subtypes while keeping cluster consistency high.
 
-### To run the algorithm all the data must be in the *Data* folder
+** To run the algorithm all the data must be in the *Data* folder **
 
 * Open R and set the main Galgo folder as working directory
 * First, be sure you have all the needed libraries (listed in the 'libraries.R' file) installed and properly configured.
@@ -33,17 +33,19 @@ In linux systems install lastest nvidia cuda drivers and the opencl backend.
 ```
 
 * For each cancer type run the following set of commands
+** Previous to the dataset creation, please look carefully inside the data.R files the data needed for the code execution
 
-##Breast cancer
+## Breast cancer
 ```
       #Create data
       source("./Data/BRCA_data.R")
+     
       
       #Run galgoR
       source("./Galgo_BRCA.R")
       
 ```
-##Colorectal cancer
+## Colorectal cancer
 ```
       #Create data
       source("./Data/CRC_data.R")
@@ -52,7 +54,7 @@ In linux systems install lastest nvidia cuda drivers and the opencl backend.
       source("./Galgo_CRC.R")
       
 ```
-##Lung adenocarcinoma
+## Lung adenocarcinoma
 ```
       #Create data
       source("./Data/LUAD_data.R")
@@ -62,7 +64,7 @@ In linux systems install lastest nvidia cuda drivers and the opencl backend.
       
 ```
 
-##High grade serous ovarian cancer
+## High grade serous ovarian cancer
 ```
       #Create data
       source("./Data/HGSOC_data.R")
