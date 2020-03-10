@@ -26,3 +26,5 @@ library(TCGAbiolinks)
 library(limma)
 library(edgeR)
 library(hgu133plus2.db)
+source("./heatmap_3.R")
+
