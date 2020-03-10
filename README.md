@@ -32,7 +32,7 @@ In linux systems install lastest nvidia cuda drivers and the opencl backend.
       
 ```
 
-* For each cancer type run the following set of commands:
+# To reproduce the results of the paper for each cancer type run the following set of commands:
 
 **Previous to the dataset creation, please look carefully inside the data.R files the data needed for the code execution**
 
